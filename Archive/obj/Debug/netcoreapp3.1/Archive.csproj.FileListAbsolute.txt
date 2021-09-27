@@ -1,0 +1,9 @@
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\Archive\bin\Debug\netcoreapp3.1\Archive.deps.json
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\Archive\bin\Debug\netcoreapp3.1\Archive.dll
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\Archive\bin\Debug\netcoreapp3.1\Archive.pdb
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\Archive\obj\Debug\netcoreapp3.1\Archive.csproj.AssemblyReference.cache
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\Archive\obj\Debug\netcoreapp3.1\Archive.AssemblyInfoInputs.cache
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\Archive\obj\Debug\netcoreapp3.1\Archive.AssemblyInfo.cs
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\Archive\obj\Debug\netcoreapp3.1\Archive.csproj.CoreCompileInputs.cache
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\Archive\obj\Debug\netcoreapp3.1\Archive.dll
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\Archive\obj\Debug\netcoreapp3.1\Archive.pdb
