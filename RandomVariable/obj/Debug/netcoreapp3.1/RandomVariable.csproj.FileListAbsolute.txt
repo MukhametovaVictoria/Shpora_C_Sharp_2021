@@ -1,0 +1,9 @@
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\RandomVariable\bin\Debug\netcoreapp3.1\RandomVariable.deps.json
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\RandomVariable\bin\Debug\netcoreapp3.1\RandomVariable.dll
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\RandomVariable\bin\Debug\netcoreapp3.1\RandomVariable.pdb
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\RandomVariable\obj\Debug\netcoreapp3.1\RandomVariable.csproj.AssemblyReference.cache
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\RandomVariable\obj\Debug\netcoreapp3.1\RandomVariable.AssemblyInfoInputs.cache
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\RandomVariable\obj\Debug\netcoreapp3.1\RandomVariable.AssemblyInfo.cs
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\RandomVariable\obj\Debug\netcoreapp3.1\RandomVariable.csproj.CoreCompileInputs.cache
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\RandomVariable\obj\Debug\netcoreapp3.1\RandomVariable.dll
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\RandomVariable\obj\Debug\netcoreapp3.1\RandomVariable.pdb
