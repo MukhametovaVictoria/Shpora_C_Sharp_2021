@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <LangVersion>9</LangVersion>
+        <RootNamespace>CryptoHelpers</RootNamespace>
+        <StartupObject>CryptoHelpers.Program</StartupObject>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="SlowCryptoLib">
+        <HintPath>lib/SlowCryptoLib.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
