@@ -1,0 +1,13 @@
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\csharp-packer-master\Packer\bin\Debug\netcoreapp3.1\Packer.exe
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\csharp-packer-master\Packer\bin\Debug\netcoreapp3.1\Packer.deps.json
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\csharp-packer-master\Packer\bin\Debug\netcoreapp3.1\Packer.runtimeconfig.json
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\csharp-packer-master\Packer\bin\Debug\netcoreapp3.1\Packer.runtimeconfig.dev.json
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\csharp-packer-master\Packer\bin\Debug\netcoreapp3.1\Packer.dll
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\csharp-packer-master\Packer\bin\Debug\netcoreapp3.1\Packer.pdb
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\csharp-packer-master\Packer\obj\Debug\netcoreapp3.1\Packer.csproj.AssemblyReference.cache
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\csharp-packer-master\Packer\obj\Debug\netcoreapp3.1\Packer.AssemblyInfoInputs.cache
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\csharp-packer-master\Packer\obj\Debug\netcoreapp3.1\Packer.AssemblyInfo.cs
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\csharp-packer-master\Packer\obj\Debug\netcoreapp3.1\Packer.csproj.CoreCompileInputs.cache
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\csharp-packer-master\Packer\obj\Debug\netcoreapp3.1\Packer.dll
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\csharp-packer-master\Packer\obj\Debug\netcoreapp3.1\Packer.pdb
+C:\Users\Виктория\Desktop\Универ\ТП\Шпора\csharp-packer-master\Packer\obj\Debug\netcoreapp3.1\Packer.genruntimeconfig.cache
