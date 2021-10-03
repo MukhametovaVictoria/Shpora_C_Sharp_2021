@@ -9,7 +9,7 @@ namespace RandomVariable
     public class RandomVariableStatisticCalculator : IRandomVariableStatisticCalculator
     {
         RandomVariableStatistic RVS { get; set; }
-        private static List<Tuple<Numbers, char>> list;
+        private List<Tuple<Numbers, char>> list {get; set;}
         public RandomVariableStatisticCalculator()
         {
             RVS = new RandomVariableStatistic();
@@ -27,7 +27,7 @@ namespace RandomVariable
             return RVS;
         }
 
-        private static void ParseExpression(string str)
+        private void ParseExpression(string str)
         {
             list = new List<Tuple<Numbers, char>>();
             var stackOfOps = new Stack<char>();
@@ -82,13 +82,13 @@ namespace RandomVariable
                 list.Add(new Tuple<Numbers, char>(null, stackOfOps.Pop()));
         }
 
-        private static void AddToList(bool simple, string value)
+        private void AddToList(bool simple, string value)
         {
             var number = new Numbers(value, simple);
             list.Add(new Tuple<Numbers, char>(number, ' '));
         }
 
-        static private byte GetPriority(char s)
+        private byte GetPriority(char s)
         {
             switch (s)
             {
@@ -103,7 +103,7 @@ namespace RandomVariable
             }
         }
 
-        private static Numbers ResolveMathExpORVariance(string statisticForCalculate)
+        private Numbers ResolveMathExpORVariance(string statisticForCalculate)
         {
             var stack = new Stack<Numbers>();
             if (list.Count == 1)
@@ -151,10 +151,10 @@ namespace RandomVariable
             return stack.Pop();
         }
 
-        private static Numbers FindMathExp(Numbers number1, Numbers number2, char op)
+        private Numbers FindMathExp(Numbers number1, Numbers number2, char op)
         {
             if (!number1.Simple && !number2.Simple && (op == '*' || op == '/'))
-                throw new Exception("Нельзя умножать/делить случайные выражения друг на друга");
+                throw new Exception("ГЌГҐГ«ГјГ§Гї ГіГ¬Г­Г®Г¦Г ГІГј/Г¤ГҐГ«ГЁГІГј Г±Г«ГіГ·Г Г©Г­Г»ГҐ ГўГ»Г°Г Г¦ГҐГ­ГЁГї Г¤Г°ГіГЈ Г­Г  Г¤Г°ГіГЈГ ");
             var value = Find(number1.DNumber, number2.DNumber, op);
             var newNumber = new Numbers(value.ToString(),
                     !number1.Simple ? number1.Simple : !number2.Simple ? number2.Simple : true);
@@ -163,10 +163,10 @@ namespace RandomVariable
             return newNumber;
         }
 
-        private static Numbers FindVariance(Numbers number1, Numbers number2, char op)
+        private Numbers FindVariance(Numbers number1, Numbers number2, char op)
         {
             if (!number1.Simple && !number2.Simple && (op == '*' || op == '/'))
-                throw new Exception("Нельзя умножать/делить случайные выражения друг на друга");
+                throw new Exception("ГЌГҐГ«ГјГ§Гї ГіГ¬Г­Г®Г¦Г ГІГј/Г¤ГҐГ«ГЁГІГј Г±Г«ГіГ·Г Г©Г­Г»ГҐ ГўГ»Г°Г Г¦ГҐГ­ГЁГї Г¤Г°ГіГЈ Г­Г  Г¤Г°ГіГЈГ ");
             var value = 0.0;
             if (op == '*' || op == '/')
             {
@@ -189,7 +189,7 @@ namespace RandomVariable
             };
         }
 
-        private static double Find(double a, double b, char op)
+        private double Find(double a, double b, char op)
         {
             switch (op)
             {
@@ -206,11 +206,11 @@ namespace RandomVariable
                     return a / b;
 
                 default:
-                    throw new FormatException(string.Format("Неверная входная строка"));
+                    throw new FormatException(string.Format("ГЌГҐГўГҐГ°Г­Г Гї ГўГµГ®Г¤Г­Г Гї Г±ГІГ°Г®ГЄГ "));
             }
         }
 
-        private static Dictionary<double, double> ResolveProbability()
+        private Dictionary<double, double> ResolveProbability()
         {
             var stack = new Stack<Tuple<Numbers, Dictionary<double, double>>>();
             if (list.Count == 1)
@@ -270,9 +270,9 @@ namespace RandomVariable
         }
 
 
-        private static Dictionary<double, double> probabilities;
+        private Dictionary<double, double> probabilities {get; set;}
 
-        private static void FindProbabilityForOneDice(string number)
+        private void FindProbabilityForOneDice(string number)
         {
             probabilities = new Dictionary<double, double>();
             var arr = number.Split('d');
@@ -282,7 +282,7 @@ namespace RandomVariable
             FindProbabilityForOneDice(iters, new double[iters], value, count);
         }
 
-        private static void FindProbabilityForOneDice(int iters, double[] ind, double value, double count)
+        private void FindProbabilityForOneDice(int iters, double[] ind, double value, double count)
         {
             for (int j = 1; j <= value; j++)
             {
@@ -300,7 +300,7 @@ namespace RandomVariable
             }
         }
 
-        private static void FindProbabilityForDices(Dictionary<double, double> dic1, Dictionary<double, double> dic2, char op)
+        private void FindProbabilityForDices(Dictionary<double, double> dic1, Dictionary<double, double> dic2, char op)
         {
             probabilities = new Dictionary<double, double>();
             for (int i = 0; i < dic1.Count(); i++)
@@ -317,7 +317,7 @@ namespace RandomVariable
             }
         }
 
-        private static void FindProbabilityForDiceAndSimple(Dictionary<double, double> dic, double number, char op, bool firstIsDic)
+        private void FindProbabilityForDiceAndSimple(Dictionary<double, double> dic, double number, char op, bool firstIsDic)
         {
             probabilities = new Dictionary<double, double>();
             for (int i = 0; i < dic.Count(); i++)
@@ -329,7 +329,7 @@ namespace RandomVariable
             }
         }
 
-        private static void FindProbabilityForSimples(double number1, double number2, char op)
+        private void FindProbabilityForSimples(double number1, double number2, char op)
         {
             probabilities = new Dictionary<double, double>();
             var val = Find(number1, number2, op);
