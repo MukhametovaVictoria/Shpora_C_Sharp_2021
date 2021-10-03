@@ -19,9 +19,9 @@ namespace RandomVariable
         {
             ParseExpression(expression);
             if (statisticForCalculate.Contains(StatisticKind.ExpectedValue))
-                RVS.ExpectedValue = ResolveMathExpORVariance("ExpectedValue").DNumber;
+                RVS.ExpectedValue = ResolveMathExpORVariance(StatisticKind.ExpectedValue).DNumber;
             if(statisticForCalculate.Contains(StatisticKind.Variance))
-                RVS.Variance = ResolveMathExpORVariance("Variance").DNumber;
+                RVS.Variance = ResolveMathExpORVariance(StatisticKind.Variance).DNumber;
             if (statisticForCalculate.Contains(StatisticKind.ProbabilityDistribution))
                 RVS.ProbabilityDistribution = ResolveProbability();
             return RVS;
@@ -109,12 +109,12 @@ namespace RandomVariable
             if (list.Count == 1)
             {
                 var num = new Numbers(list[0].Item1.Number, list[0].Item1.Simple);
-                if (statisticForCalculate == "ExpectedValue")
+                if (statisticForCalculate == StatisticKind.ExpectedValue)
                 {
                     num.FindMathExpectOfRandExp();
                     return num;
                 }
-                else if (statisticForCalculate == "Variance")
+                else if (statisticForCalculate == StatisticKind.Variance)
                 {
                     num.FindVarianceOfRandExp();
                     return num;
@@ -131,14 +131,14 @@ namespace RandomVariable
                         var num1 = stack.Pop();
                         var number1 = new Numbers(num1.Number, num1.Simple) { Resolved = num1.Resolved, DNumber = num1.DNumber };
                         var number2 = new Numbers(num2.Number, num2.Simple) { Resolved = num2.Resolved, DNumber = num2.DNumber };
-                        if (statisticForCalculate == "ExpectedValue")
+                        if (statisticForCalculate == StatisticKind.ExpectedValue)
                         {
                             if (!number1.Resolved) number1.FindMathExpectOfRandExp();
                             if (!number2.Resolved) number2.FindMathExpectOfRandExp();
                             var newNum = FindMathExp(number1, number2, list[i].Item2);
                             stack.Push(newNum);
                         }
-                        else if (statisticForCalculate == "Variance")
+                        else if (statisticForCalculate == StatisticKind.Variance)
                         {
                             if (!number1.Resolved) number1.FindVarianceOfRandExp();
                             if (!number2.Resolved) number2.FindVarianceOfRandExp();
