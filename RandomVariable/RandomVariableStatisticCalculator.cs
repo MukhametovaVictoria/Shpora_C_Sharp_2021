@@ -103,7 +103,7 @@ namespace RandomVariable
             }
         }
 
-        private Numbers ResolveMathExpORVariance(string statisticForCalculate)
+        private Numbers ResolveMathExpORVariance(StatisticKind statisticForCalculate)
         {
             var stack = new Stack<Numbers>();
             if (list.Count == 1)
